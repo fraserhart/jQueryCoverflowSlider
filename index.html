@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>jQuery Coverflow</title>
+<link rel="stylesheet" type="text/css" href="jquery.coverflow.slider.css" />
+</head>
+<body>
+<div class="wrapper">
+	<div id="contentSlider">
+		<ul>
+			<li><img src="http://ecx.images-amazon.com/images/I/81Dg6BHaXuL._SL1500_.jpg"></li>
+			<li><img src="http://ecx.images-amazon.com/images/I/61dxJf6n9HL._SY450__PJautoripBadge,BottomRight,4,-40_OU11__.jpg"></li>
+			<li><img src="http://ecx.images-amazon.com/images/I/61OH6A8OXSL._SY450_.jpg"></li>
+			<li><img src="http://ecx.images-amazon.com/images/I/51kvc9ytIwL._SY450__PJautoripBadge,BottomRight,4,-40_OU11__.jpg"></li>
+			<li><img src="http://ecx.images-amazon.com/images/I/511VbUVNgnL._SL500_AA280_.jpg"></li>
+			<li><img src="http://ecx.images-amazon.com/images/I/61vIQQATH0L._SX450__PJautoripBadge,BottomRight,4,-40_OU11__.jpg"></li>
+			<li><img src="http://ecx.images-amazon.com/images/I/51DYxm2lvPL._SL500_AA280_.jpg"></li>
+		</ul>
+	</div>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="jquery.coverflow.slider.js"></script>
+<script>
+$('#contentSlider').coverFlow({
+	//'initialFocus' : 0,
+	//'speed' : 200,
+	//'addClasses' : "",
+	afterChange: function(index){
+		console.log('Slide in focus: ' + index);
+	}
+});
+</script>
+</body>
+</html>
